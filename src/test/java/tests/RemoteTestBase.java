@@ -26,7 +26,7 @@ public class RemoteTestBase {
         Configuration.browserVersion = System.getProperty("version", "100");
         Configuration.holdBrowserOpen = false;
         Configuration.timeout = 10000;
-        Configuration.remote = System.getProperty("webDriverHost", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
+        Configuration.remote = System.getProperty("host", "https://user1:1234@selenoid.autotests.cloud") + "/wd/hub";
 
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 
