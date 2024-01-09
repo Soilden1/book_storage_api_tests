@@ -19,7 +19,7 @@ import static tests.TestData.PASSWORD;
 @Epic("Работа с 'книжным шкафом'")
 @Owner("dimacm14")
 @Severity(CRITICAL)
-public class DeleteBookTest extends RemoteTestBase {
+public class DeleteBookTest extends TestBase {
 
     private final LoginApi login = new LoginApi();
     private final BookApi book = new BookApi();
